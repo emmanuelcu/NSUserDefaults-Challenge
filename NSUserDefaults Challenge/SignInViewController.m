@@ -34,4 +34,45 @@
 }
 */
 
+//Prepare for segue method
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    if ([segue.destinationViewController isKindOfClass:[CreateAccountViewController class]]) {
+        CreateAccountViewController *createAccountVC = segue.destinationViewController;
+        createAccountVC.delegate = self;
+    }
+}
+
+- (IBAction)loginButton:(UIButton *)sender {
+    
+    NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:USER_NAME];
+    NSString *password = [[NSUserDefaults standardUserDefaults] objectForKey:USER_PASSWORD];
+    
+    if ([self.usernameLoginTextfield.text isEqualToString:username] && [self.passwordLoginTextfield.text isEqualToString:password]) {
+            [self performSegueWithIdentifier:@"toViewController" sender:sender];
+    }
+    else{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username or password are wrong. Please, verify your username or password again." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        [alertView show];
+    }
+    
+}
+
+- (IBAction)signupButton:(UIBarButtonItem *)sender {
+    
+    [self performSegueWithIdentifier:@"toCreateAccountViewController" sender:sender];
+}
+
+#pragma mark CreateAccountViewController Delegate
+
+-(void)didCancel{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)didCreateAccount{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 @end

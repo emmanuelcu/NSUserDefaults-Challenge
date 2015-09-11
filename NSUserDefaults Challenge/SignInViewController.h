@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateAccountViewController.h"
 
-@interface SignInViewController : UIViewController
+@interface SignInViewController : UIViewController <CreateAccountViewControllerDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *usernameLoginTextfield;
+@property (strong, nonatomic) IBOutlet UITextField *passwordLoginTextfield;
+- (IBAction)loginButton:(UIButton *)sender;
+- (IBAction)signupButton:(UIBarButtonItem *)sender;
 
 @end

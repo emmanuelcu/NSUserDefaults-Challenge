@@ -14,6 +14,8 @@
 		2F355D101BA1FF8A0032503A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F355D0F1BA1FF8A0032503A /* Images.xcassets */; };
 		2F355D131BA1FF8A0032503A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F355D111BA1FF8A0032503A /* LaunchScreen.xib */; };
 		2F355D1F1BA1FF8A0032503A /* NSUserDefaults_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F355D1E1BA1FF8A0032503A /* NSUserDefaults_ChallengeTests.m */; };
+		2F355D2A1BA2009B0032503A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F355D291BA2009A0032503A /* SignInViewController.m */; };
+		2F355D2D1BA200CD0032503A /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F355D2C1BA200CD0032503A /* CreateAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		2F355D181BA1FF8A0032503A /* NSUserDefaults ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaults ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F355D1D1BA1FF8A0032503A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F355D1E1BA1FF8A0032503A /* NSUserDefaults_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaults_ChallengeTests.m; sourceTree = "<group>"; };
+		2F355D281BA2009A0032503A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		2F355D291BA2009A0032503A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		2F355D2B1BA200CD0032503A /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		2F355D2C1BA200CD0032503A /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				2F355D091BA1FF8A0032503A /* ViewController.h */,
 				2F355D0A1BA1FF8A0032503A /* ViewController.m */,
 				2F355D0C1BA1FF8A0032503A /* Main.storyboard */,
+				2F355D2B1BA200CD0032503A /* CreateAccountViewController.h */,
+				2F355D2C1BA200CD0032503A /* CreateAccountViewController.m */,
+				2F355D281BA2009A0032503A /* SignInViewController.h */,
+				2F355D291BA2009A0032503A /* SignInViewController.m */,
 				2F355D0F1BA1FF8A0032503A /* Images.xcassets */,
 				2F355D111BA1FF8A0032503A /* LaunchScreen.xib */,
 				2F355D021BA1FF8A0032503A /* Supporting Files */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F355D2A1BA2009B0032503A /* SignInViewController.m in Sources */,
 				2F355D0B1BA1FF8A0032503A /* ViewController.m in Sources */,
+				2F355D2D1BA200CD0032503A /* CreateAccountViewController.m in Sources */,
 				2F355D081BA1FF8A0032503A /* AppDelegate.m in Sources */,
 				2F355D051BA1FF8A0032503A /* main.m in Sources */,
 			);
